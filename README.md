@@ -1,6 +1,9 @@
 # PTCGP_card-simulation
-![Simulation Result: 60 Card Packs, 10,000 Trials](https://github.com/kerong2002/PTCGP_card-simulation/blob/main/simulation.png)
 This Python project simulates the probability distribution of drawing rare cards from card packs in a gacha-style system. The simulation takes into account the probability of obtaining rare cards from both standard and rare card packs, and calculates the expected outcomes over a large number of trials.
+
+## Result
+![Simulation Result: 60 Card Packs, 10,000 Trials](https://github.com/kerong2002/PTCGP_card-simulation/blob/main/simulation.png)
+
 
 ## Project Overview
 

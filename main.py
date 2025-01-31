@@ -1,3 +1,4 @@
+# 此模擬情形，只基於ex寶可夢為主機率進行分布
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -5,12 +6,15 @@ import matplotlib.pyplot as plt
 rare_pack_prob = 0.0005  # 抽到稀有卡包機率 0.05%
 
 # 一般卡包中第 4 張卡的機率:
+# 0.04% * 2(金卡) + 0.222%(時鏡卡) + 0.041% * 9(全圖+彩邊ex) + 0.333% * 5(普通ex)
 slot_4_prob = (0.0004 * 2) + 0.00222 + (0.00041 * 9) + (0.00333 * 5)
 
 # 一般卡包中第 5 張卡的機率:
+# 0.08% * 2(金卡) + 0.888%(時鏡卡) + 0.166% * 9(全圖+彩邊ex) + 1.332% * 5(普通ex)
 slot_5_prob = (0.0008 * 2) + 0.00888 + (0.00166 * 9) + (0.01332 * 5)
 
 # 稀有卡包中每張卡的機率:
+# 3.846%(金卡) + 3.846%(時鏡卡) + 3.846% * 9(全圖+彩邊ex) + 0%(沒有普通ex)
 rare_card_prob = (0.03846 + 0.03846 + (0.03846 * 9)) / 100
 
 def simulate_pulls(num_tests, num_packs):
@@ -53,7 +57,7 @@ def plot_distribution(results, num_packs, title):
 
 
 if __name__ == "__main__":
-    num_tests = 10000  # 測試次數
+    num_tests = 100_0000  # 測試次數
     num_packs = 60
     results_rare_cards, results_rare_packs = simulate_pulls(num_tests, num_packs)
 

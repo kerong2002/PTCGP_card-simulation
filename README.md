@@ -3,10 +3,10 @@ This Python project simulates the probability distribution of drawing rare cards
 
 ## Result
 ##### Simulation Result: 60 Card Packs, 10,000 Trials
-![Simulation Result: 60 Card Packs, 10,000 Trials](https://github.com/kerong2002/PTCGP_card-simulation/blob/main/simulation.png)
+![Simulation Result: 60 Card Packs, 10,000 Trials](https://github.com/kerong2002/PTCGP_card-simulation/blob/main/Simulation_60-Packs_10%2C000-Trials.png)
 
 ##### Simulation Result: 60 Card Packs, 1,000,000 Trials
-
+![Simulation Result: 60 Card Packs, 1,000,000 Trials](https://github.com/kerong2002/PTCGP_card-simulation/blob/main/Simulation_60-Packs_1%2C000%2C000-Trials.png)
 ## Project Overview
 
 In this simulation, there are two types of card packs:
